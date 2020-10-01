@@ -7,13 +7,13 @@ window.onload = function() {
 
    
     
-    function getPow(num,time){
+    function getPow(num,time1,time2){
       var number = num; 
       var num2 = 0;
       setTimeout(()=> {
        num2 = doit(number);
-       (function(){setTimeout(()=> doit(num2), 3000);})();
-      }, time);
+       (function(){setTimeout(()=> doit(num2), time2);})();
+      }, time1);
     
    }
 
